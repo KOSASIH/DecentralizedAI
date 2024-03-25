@@ -42,8 +42,9 @@ results = model.predict(data)`
 
 To configure DecentralizedAI, a configuration file must be created in YAML format.
 
-The following is an example of a basic configuration file:
+The following is an example of a basic configuration file: 
 
+[Configuration Example](modules/configuration.yaml) 
 
 In this example, the configuration file sets the project name to "example", specifies the path to the training data, defines a model named "example_model" of type "example_type" with hyperparameters "learning_rate" and "optimizer", and specifies a validation split of 0.2.
 
