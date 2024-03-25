@@ -87,3 +87,39 @@ Here is an example of how to start the Decentralized Web Node:
 `await web5.start({loglevel: 'debug'});`
 
 This will start the Decentralized Web Node and begin listening for incoming connections.
+
+# Deploying Your Code
+To deploy your code, you can use the web5.deploy method. This method takes an object with the following properties:
+
+name: The name of the Decentralized Web Node.
+loglevel (optional): The log level for the Decentralized Web Node.
+Here is an example of how to deploy your code:
+
+`Edit
+Full Screen
+Copy code
+const deployResult = await web5.deploy({
+   name: 'my-dwn',
+   loglevel: 'debug',
+});`
+
+console.log
+The deployResult object will contain information about the deployed Decentralized Web Node, such as its address and the public key of its signing key.
+
+To interact with your deployed Decentralized Web Node, you can use the web5.dwn.connect method. This method takes an object with the following properties:
+
+address: The address of the Decentralized Web Node.
+publicKey: The public key of the Decentralized Web Node's signing key.
+Here is an example of how to connect to your deployed Decentralized Web Node:
+
+`const dwn = await web5.dwn.connect({
+  address: deployResult.address,
+  publicKey: deployResult.publicKey,
+});`
+
+Now you can use the dwn object to interact with your deployed Decentralized Web Node, just as you did with the local Decentralized Web Node in the previous section.
+
+# Conclusion 
+
+This guide has shown you how to develop and deploy a decentralized AI system using the DecentralizedAI framework. By following these steps, you can create your own decentralized AI system and deploy it to the Decentralized Web.
+
