@@ -52,4 +52,4 @@ We welcome contributions from the community! If you would like to contribute to 
 
 # License
 
-DecentralizedAI is released under the MIT License.
+DecentralizedAI is released under the [MIT License](LICENSE.md) 
